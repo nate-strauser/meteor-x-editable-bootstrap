@@ -1,0 +1,7 @@
+.editableform-loading {
+    background-image: url('/packages/x-editable/lib/bootstrap-editable/img/loading.gif');
+}
+
+.editable-clear-x {
+   background-image: url('/packages/x-editable/lib/bootstrap-editable/img/clear.png');
+}
