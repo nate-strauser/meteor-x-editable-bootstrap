@@ -3,6 +3,6 @@
 	"description": "Latest version of X-editable for bootstrap w/ wysithtml packaged for meteor",
 	"homepage": "https://github.com/nate-strauser/meteor-x-editable-bootstrap",
 	"author": "Nate Strauser",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"git": "https://github.com/nate-strauser/meteor-x-editable-bootstrap.git"
 }
