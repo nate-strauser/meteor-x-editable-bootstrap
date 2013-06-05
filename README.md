@@ -1,17 +1,17 @@
 meteor-x-editable
 =================
 
-Smart package for x-editable in place editor
+Smart package for x-editable v1.4.4 in place editor
 
 
 textarea example
 ----------------
 
-***template**
+#### template
 
     <p id="textArea" class="editable" data-type="textarea" data-placeholder="Enter text" data-emptytext="Click to enter text" data-rows="4">{{textArea}}</p>
     
-**rendered callback*
+#### rendered callback
 
     $(template.find('#textArea.editable:not(.editable-click)')).editable('destroy').editable({
       success: function(response, newValue) {
