@@ -1,7 +1,7 @@
 meteor-x-editable
 =================
 
-Smart package for x-editable v1.4.4 in place editor
+Smart package for x-editable in place editor
 
 
 textarea example
