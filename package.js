@@ -3,6 +3,9 @@ Package.describe({
 });
 
 Package.on_use(function (api){
+	// Package needs jQuery
+	api.use(['jquery'], 'client')
+
 	//x-editable
 	api.add_files('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
 	api.add_files('lib/bootstrap-editable/js/bootstrap-editable.js', 'client');
@@ -22,4 +25,8 @@ Package.on_use(function (api){
 	
 	//override image paths
 	api.add_files('path-override.css', 'client');  
+
+	// Exports
+	if(typeof api.export != 'undefined')
+		api.export(['wysihtml5', 'jQuery'], 'client')
 });
