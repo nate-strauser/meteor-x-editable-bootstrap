@@ -25,8 +25,4 @@ Package.on_use(function (api){
 	
 	//override image paths
 	api.add_files('path-override.css', 'client');  
-
-	// Exports
-	if(typeof api.export != 'undefined')
-		api.export(['wysihtml5', 'jQuery'], 'client')
 });
