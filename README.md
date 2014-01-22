@@ -1,7 +1,8 @@
 meteor-x-editable
 =================
 
-Smart package for x-editable in place editor
+The [x-editable](http://vitalets.github.io/x-editable/) in place editor with Twitter Boostrap,
+repackaged for Meteor.
 
 
 textarea example
