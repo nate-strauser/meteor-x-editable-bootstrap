@@ -1,7 +1,7 @@
 meteor-x-editable
 =================
 
-The [x-editable](http://vitalets.github.io/x-editable/) in place editor with Twitter Boostrap,
+The [x-editable](http://vitalets.github.io/x-editable/) in-place editor with Twitter Bootstrap,
 repackaged for Meteor.
 
 
