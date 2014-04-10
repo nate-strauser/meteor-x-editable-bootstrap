@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "x-editable-bootstrap": {
+        "path": ".."
+      }
+    },
+    "packages": {
+      "x-editable-bootstrap": {
+        "path": ".."
+      }
+    }
+  }
+}

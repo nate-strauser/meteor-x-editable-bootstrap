@@ -1,0 +1,11 @@
+<head>
+  <title>example</title>
+</head>
+
+<body>
+  {{> editable}}
+</body>
+
+<template name="editable">
+  <p id="textArea" class="editable" data-type="textarea" data-placeholder="Enter text" data-emptytext="Click to enter text" data-rows="4">{{textAreaContent}}</p>
+</template>

@@ -10,13 +10,18 @@ textarea example
 
 #### template
 
-    <p id="textArea" class="editable" data-type="textarea" data-placeholder="Enter text" data-emptytext="Click to enter text" data-rows="4">{{textArea}}</p>
+    <p id="textArea" class="editable" data-type="textarea" data-placeholder="Enter text" data-emptytext="Click to enter text" data-rows="4">{{textAreaContent}}</p>
     
 #### rendered callback
 
-    $(template.find('#textArea.editable:not(.editable-click)')).editable('destroy').editable({
+    $('#textArea.editable').editable({
       success: function(response, newValue) {
         <do something with newValue - usually a collection.update call>
     }});
     
-**note** the `:not(..)` selector + the `destroy` method call prevent multiple instances of editable controls while allowing the control to remain reactive.  one could use the `{{#constant}}<editable>{{/constant}}` wrapper pattern to allow for a single editable initialization
+
+version history
+---------------
+#### 1.4.6.2
+
+Added example and updated readme to reflect operation under meteor 0.8.0+ (syntax is more simple with blaze)
