@@ -9,6 +9,7 @@ if (Meteor.isClient) {
 
   Template.editable.rendered = function(){
     $('#textArea.editable').editable({
+      placement: "auto top",
       success: function(response, newValue) {
         console.log('set new value to ' + newValue);
         Session.set('textAreaContent', newValue);
