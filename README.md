@@ -21,11 +21,14 @@ textarea example
     
 #### rendered callback
 
+The short answer:
+
     $('#textArea.editable').editable({
       success: function(response, newValue) {
         <do something with newValue - usually a collection.update call>
     }});
-    
+
+The long answer: trying to use x-editable properly on Meteor 0.8 with reactive updates can get interesting. If there is a lot of concurrency in your editing, you will want to consult the information and links in [this StackOverflow post](http://stackoverflow.com/a/23144211/586086).
 
 version history
 ---------------
