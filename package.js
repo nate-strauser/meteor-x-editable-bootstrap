@@ -4,7 +4,11 @@ Package.describe({
 
 Package.on_use(function (api){
 	// Package needs jQuery
-	api.use(['jquery'], 'client')
+	api.use('jquery');
+	// This depends on BS3 JS libraries, including popovers.
+	// Need to make sure bootstrap 3 is loaded first, or errors will ensue
+	// https://github.com/vitalets/x-editable/issues/395
+	api.use('bootstrap-3');
 
 	//x-editable
 	api.add_files('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
