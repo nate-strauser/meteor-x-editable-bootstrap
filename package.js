@@ -12,7 +12,7 @@ Package.on_use(function (api){
   // This depends on BS3 JS libraries, including popovers.
   // Need to make sure bootstrap 3 is loaded first, or errors will ensue
   // https://github.com/vitalets/x-editable/issues/395
-  api.use("mrt:bootstrap-3@>=3.1.1-1");
+  api.use("mrt:bootstrap-3@3.1.1-1");
 
   //x-editable
   api.add_files('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
