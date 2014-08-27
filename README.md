@@ -1,16 +1,15 @@
 meteor-x-editable
 =================
 
-The [x-editable](http://vitalets.github.io/x-editable/) in-place editor with Twitter Bootstrap,
-repackaged for Meteor.
+The [x-editable](http://vitalets.github.io/x-editable/) in-place editor with Twitter Bootstrap, repackaged for Meteor.
 
 # Install
 
 ```
-mrt add x-editable-bootstrap
+meteor add natestrauser:x-editable-bootstrap
 ```
 
-**NOTE**: The latest branch uses the Bootstrap 3 build of x-editable. If you are still using Bootstrap 2, install v1.4.6.3 instead of the latest.
+**NOTE**: The latest branch uses the Bootstrap 3 build of x-editable. If you are still using Bootstrap 2 and on Meteor 0.8.3 or earlier, install v1.4.6.3 using Meteorite instead of the latest.
 
 textarea example
 ----------------

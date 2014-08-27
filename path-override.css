@@ -1,7 +1,7 @@
 .editableform-loading {
-    background-image: url('/packages/x-editable-bootstrap/lib/bootstrap-editable/img/loading.gif');
+    background-image: url('/packages/natestrauser:x-editable-bootstrap/lib/bootstrap-editable/img/loading.gif');
 }
 
 .editable-clear-x {
-   background-image: url('/packages/x-editable-bootstrap/lib/bootstrap-editable/img/clear.png');
+   background-image: url('/packages/natestrauser:x-editable-bootstrap/lib/bootstrap-editable/img/clear.png');
 }
