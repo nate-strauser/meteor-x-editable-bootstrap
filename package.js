@@ -1,7 +1,7 @@
 Package.describe({
   name: "natestrauser:x-editable-bootstrap",
   summary: "Latest version of X-Editable for Bootstrap with wysihtml5 rich text editor",
-  version: "1.5.1",
+  version: "1.5.2",
   git: "https://github.com/nate-strauser/meteor-x-editable-bootstrap.git"
 });
 
