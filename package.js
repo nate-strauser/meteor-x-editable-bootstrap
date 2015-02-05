@@ -13,7 +13,9 @@ Package.on_use(function (api){
   // This depends on BS3 JS libraries, including popovers.
   // Need to make sure bootstrap 3 is loaded first, or errors will ensue
   // https://github.com/vitalets/x-editable/issues/395
-  api.use("twbs:bootstrap@3.3.1");
+  api.use([
+        "twbs:bootstrap@3.3.1"
+    ], "client", { weak: true });
 
   //x-editable
   api.addFiles('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
