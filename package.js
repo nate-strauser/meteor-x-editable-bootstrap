@@ -1,19 +1,21 @@
 Package.describe({
   name: "natestrauser:x-editable-bootstrap",
   summary: "Latest version of X-Editable for Bootstrap with wysihtml5 rich text editor",
-  version: "1.5.2_1",
+  version: "1.5.2_2",
   git: "https://github.com/nate-strauser/meteor-x-editable-bootstrap.git"
 });
 
 Package.on_use(function (api){
-  api.versionsFrom("0.9.3.1");
+  api.versionsFrom("1.0");
   // Package needs jQuery
   api.use('jquery');
 
   // This depends on BS3 JS libraries, including popovers.
   // Need to make sure bootstrap 3 is loaded first, or errors will ensue
   // https://github.com/vitalets/x-editable/issues/395
-  api.use("mizzao:bootstrap-3@3.2.0_1");
+  api.use([
+        "twbs:bootstrap@3.3.1"
+    ], "client", { weak: true });
 
   //x-editable
   api.addFiles('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
