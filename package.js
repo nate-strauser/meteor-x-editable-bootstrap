@@ -6,22 +6,21 @@ Package.describe({
 });
 
 Package.on_use(function (api){
-  api.versionsFrom("1.0");
+  api.versionsFrom("1.2.0.1");
   // Package needs jQuery
   api.use('jquery');
 
   // This depends on BS3 JS libraries, including popovers.
   // Need to make sure bootstrap 3 is loaded first, or errors will ensue
   // https://github.com/vitalets/x-editable/issues/395
-  api.use([
-        "twbs:bootstrap@3.3.1"
-    ], "client", { weak: true });
+  api.use("twbs:bootstrap@3.3.5", "client", { weak: true });
 
   //x-editable
   api.addFiles('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
   api.addFiles('lib/bootstrap-editable/js/bootstrap-editable.js', 'client', {bare:true});
-  api.addFiles('lib/bootstrap-editable/img/clear.png', 'client');
-  api.addFiles('lib/bootstrap-editable/img/loading.gif', 'client');
+
+  api.addAssets('lib/bootstrap-editable/img/clear.png', 'client');
+  api.addAssets('lib/bootstrap-editable/img/loading.gif', 'client');
 
   //address
   api.addFiles('lib/address/address.css', 'client');
