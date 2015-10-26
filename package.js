@@ -15,6 +15,9 @@ Package.on_use(function (api){
   // https://github.com/vitalets/x-editable/issues/395
   api.use("twbs:bootstrap@3.3.5", "client", { weak: true });
   api.use("nemo64:bootstrap@3.3.5_2", "client", { weak: true });
+  
+  // Add FontAwesome for button icons
+  api.use("fortawesome:fontawesome@4.4.0", "client", { weak: true });
 
   //x-editable
   api.addFiles('lib/bootstrap-editable/css/bootstrap-editable.css', 'client');
